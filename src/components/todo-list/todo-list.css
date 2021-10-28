@@ -1,0 +1,14 @@
+.app-list {
+    margin-top: 20px ;
+    box-shadow: 15px 15px 30px rgba(0,0,0, .15);
+    border-radius: 4px;
+}
+.list{
+   
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid rgb(175, 173, 173);
+    box-shadow: 15px 15px 30px rgba(0,0,0, .15);
+    padding: 10px ;
+    font-size: 20px;
+}

@@ -1,0 +1,90 @@
+.list-group-item {
+    padding: 15px 20px;
+    border-bottom: 1px solid #3d5a80;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+.list-group-item span {
+    line-height: 35px;
+    font-size: 20px;
+    cursor: pointer;
+    flex-grow: 1;
+    max-width: 750px;
+    min-width: 140px;
+    word-wrap: break-word;
+}
+
+.list-group-item input {
+    line-height: 35px;
+    font-size: 20px;
+    text-align: center;
+    border: 0;
+}
+
+.list-group-item button {
+    width: 35px;
+    height: 35px;
+    margin: 3px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.list-group-item .btn-cookie {
+    color: #e09f3e;
+}
+
+.list-group-item .btn-trash {
+    color: #e5383b;
+}
+
+.list-group-item .btn-ungent{
+    color: #645b5b;
+}
+.list-group-item .btn-completed{
+    color: #fff;
+    background-color: #fff;
+    border: 1px solid #333;
+}
+
+.list-group-item.urgent .fa-exclamation {
+    opacity: 1;
+    color: #ff0000;
+}
+.list-group-item.completed .fa-check {
+    opacity: 1;
+    color: #067902;
+}
+
+.list-group-item.increase .list-group-item-label, .list-group-item.increase .list-group-item-input {
+    color: #e09f3e;
+}
+.list-group-item.urgent .list-group-item-label, .list-group-item.urgent .list-group-item-input {
+    color: #ff0000;
+}
+.list-group-item.completed .list-group-item-label, .list-group-item.completed .list-group-item-input {
+    color: #06a529;
+    text-decoration: line-through;
+}
+  
+.list-group-item.increase .btn-star {
+    color: #aeaeae;
+}
+@media(max-width: 500px){
+    .list-group-item button {
+      
+        margin: 3px;
+        font-size: 14px;
+        
+    }
+    .list-group-item .btn-completed {
+        width: 25px;
+        height: 25px;
+        padding: 3px;
+    }
+   
+}
+  
