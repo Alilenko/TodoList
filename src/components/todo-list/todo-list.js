@@ -1,18 +1,11 @@
 import TodoListItem from "../todo-list-item/todo-list-item";
 import {connect} from 'react-redux';
 import {deletePost, addImportantPost, addUrgentPost, toComplete} from '../../action'
-import { useSelector } from "react-redux";
+
 import './todo-list.css';
 
 const TodoList = ({data, filter, search, addImportantPost, deletePost, addUrgentPost, toComplete, filterArr, activeFilter}) => {
-  /*  const filteredSelector = (activeFilter, data) => {
-            if (activeFilter === 'all') {
-                console.log('render');
-                return data;
-            } else {
-                return data.filter(item => item.important === activeFilter);
-            }
-        }*/
+
         let arr 
         if (activeFilter === 'all'){
             arr = data
@@ -46,22 +39,11 @@ const TodoList = ({data, filter, search, addImportantPost, deletePost, addUrgent
     
         const elements = renderDataList(arr);
     
-    
-        
-   /* const todoItem =  data.map(item => 
-        <TodoListItem key={item.id} {...item} 
-        deletePost={() => deletePost(item.id)}
-        addImportantPost={() => addImportantPost(item.id)}
-        addUrgentPost={() => addUrgentPost(item.id)}
-        toComplete ={() => toComplete(item.id)}/>
-        )
-    */
  
 console.log(filterArr);
     return (
         <ul className="app-list list-group">
-            { elements }
-            
+            { elements } 
         </ul>
     )
 }
